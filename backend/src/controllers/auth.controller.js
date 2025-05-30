@@ -19,7 +19,8 @@ const loginUser = async (req, res) => {
       httpOnly: true,
       secure: process.env.NODE_ENV === "production",
       maxAge: 24 * 60 * 60 * 1000,
-      sameSite: "strict",
+      // sameSite: "strict",
+      sameSite: "none",
     };
 
     res.cookie("token", token, cookieOption);
@@ -30,6 +31,7 @@ const loginUser = async (req, res) => {
       user: {
         f_sno: user.f_sno,
         name: user.f_userName,
+        // token:
       },
     });
   } catch (error) {
