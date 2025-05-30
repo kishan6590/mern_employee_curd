@@ -13,13 +13,13 @@ const PORT = process.env.PORT || 3000;
 app.use(
   cors({
     
-    origin: " https://mernemployeemanagement.netlify.app",
+    origin: "https://mernemployeemanagement.netlify.app",
     credentials: true,
     methods: ["GET", "POST", "DELETE", "PUT", "PATCH"],
     allowedHeaders: ["Content-Type", "authorization"],
   })
 );
-
+                                                                                                                                                                                                                                                
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
