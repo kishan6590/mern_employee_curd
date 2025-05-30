@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 3000;
 app.use(
   cors({
     
-    origin:  process.env.BASE_URL||"http://localhost:5173",
+    origin: " https://mernemployeemanagement.netlify.app",
     credentials: true,
     methods: ["GET", "POST", "DELETE", "PUT", "PATCH"],
     allowedHeaders: ["Content-Type", "authorization"],
