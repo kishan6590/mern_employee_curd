@@ -60,7 +60,7 @@ function EmployeeList() {
       <header>Logo</header>
       <Navigation />
       <div className="employeeInfo">
-        <h3>Total Count: {filteredEmployee.length}</h3>
+        <h3>Total Count: {filteredEmployee?.length??0}</h3>
         <Link id="createEmployee" to="/createemployee">
           Create Employee
         </Link>
@@ -93,7 +93,7 @@ function EmployeeList() {
             </tr>
           </thead>
           <tbody>
-            {filteredEmployee.map((employee) => {
+            {filteredEmployee?.map((employee) => {
               return (
                 <tr key={employee._id}>
                   <td>{employee.f_Id}</td>

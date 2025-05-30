@@ -25,7 +25,7 @@ function App() {
               <Routes>
                 <Route
                   path="/"
-                  element={isLoggedIn ? <Dashboard /> : <Login />}
+                  element={<Login />}
                 />
                 <Route
                   path="/home"

@@ -2,7 +2,7 @@ import { data } from "react-router";
 
 class ApiClient {
   constructor() {
-    (this.baseURL = "http://localhost:3000/api/v1/"),
+    (this.baseURL = `${import.meta.env.VITE_API_URL}/api/v1/`),
       (this.defaultHeader = {
         "Content-Type": "application/json",
         Accept: "application/json",
