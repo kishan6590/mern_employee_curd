@@ -5,7 +5,8 @@ import { BrowserRouter, Navigate, Route, Routes } from "react-router";
 
 import Dashboard from "./components/Dashboard.jsx";
 import Home from "./components/Home.jsx";
-import EmployeeList from "./components/employeelist.jsx";
+import EmployeeList from "./components/EmployeeList.jsx";
+
 import CreateEmployee from "./components/CreateEmployee.jsx";
 import EditEmployee from "./components/EditEmployee.jsx";
 function App() {

@@ -124,66 +124,7 @@ function EmployeeList() {
                 </tr>
               );
             })}
-            {/* <tr>
-            <td>1</td>
-            <td>
-              <img
-                src="http://res.cloudinary.com/dgbffj7qn/image/upload/v1748460229/daxbu1qfkihxsdob5uox.png"
-                alt=""
-              />
-            </td>
-            <td>kishan</td>
-            <td>kishan.fdfdgmail.com</td>
-            <td>9999999999</td>
-            <td>MANAGER</td>
-            <td>M</td>
-            <td>MCA</td>
-            <td>5-05-2025</td>
-            <td>
-              <Link id="edit">Edit</Link>
-              <button id="delete">Delete</button>
-            </td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>
-              <img
-                src="http://res.cloudinary.com/dgbffj7qn/image/upload/v1748460229/daxbu1qfkihxsdob5uox.png"
-                alt=""
-              />
-            </td>
-            <td>kishan</td>
-            <td>kishan.fdfdgmail.com</td>
-            <td>9999999999</td>
-            <td>MANAGER</td>
-            <td>M</td>
-            <td>MCA</td>
-            <td>5-05-2025</td>
-            <td>
-              <Link id="edit">Edit</Link>
-              <button id="delete">Delete</button>
-            </td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>
-              <img
-                src="http://res.cloudinary.com/dgbffj7qn/image/upload/v1748460229/daxbu1qfkihxsdob5uox.png"
-                alt=""
-              />
-            </td>
-            <td>kishan</td>
-            <td>kishan.fdfdgmail.com</td>
-            <td>9999999999</td>
-            <td>MANAGER</td>
-            <td>M</td>
-            <td>MCA</td>
-            <td>5-05-2025</td>
-            <td>
-              <Link id="edit">Edit</Link>
-              <button id="delete">Delete</button>
-            </td>
-          </tr> */}
+           
           </tbody>
         </table>
       </div>
