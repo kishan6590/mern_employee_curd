@@ -1,0 +1,259 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 40px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  padding: 9px 5px;
+}
+.pageStatus {
+  /* margin-top: 30px; */
+  font-size: 2em;
+  padding: 10px 7px;
+  background-color: yellow;
+}
+.formDiv {
+  display: flex;
+  justify-content: center;
+  height: 400px;
+}
+.formSection {
+  width: 600px;
+  /* display: flex;
+  flex-direction: column; */
+  padding-top: 100px;
+}
+
+label {
+  font-size: 1.5em;
+}
+input {
+  width: 350px;
+  font-size: 1.3em;
+  padding: 3px 4px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  outline: none;
+}
+#password {
+  margin-left: 38px;
+}
+.userNameLabel {
+  margin-top: 100px;
+}
+.formDiv button {
+  width: 350px;
+  padding: 2px 4px;
+  font-size: 1.4em;
+  margin-left: 130px;
+  margin-top: 20px;
+  background-color: green;
+  color: #ffff;
+  border: none;
+}
+
+/* dashbord page */
+
+.subHeader {
+  font-size: 1.3em;
+  background-color: rgb(127, 226, 227);
+}
+.subHeader ul {
+  display: flex;
+  justify-content: space-around;
+
+  list-style: none;
+}
+
+.link {
+  color: #ffff;
+  text-decoration: none;
+}
+.subHeader ul li {
+  cursor: pointer;
+  box-shadow: 1px 1px 2px rgb(36, 30, 30); /* padding */
+  background-color: rgb(65, 60, 60);
+  color: #ffff;
+  border-radius: 5px;
+  padding: 5px 9px;
+  margin: 5px 9px;
+}
+
+.infoPart {
+  gap: 50px;
+  padding-left: 60px;
+}
+.welcomeLine {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+}
+
+#createEmployee {
+  text-decoration: none;
+}
+.employeeInfo {
+  display: flex;
+  gap: 30px;
+  justify-content: end;
+  align-items: center;
+  font-size: 1.3em;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.searchBar {
+  text-align: end;
+  margin-right: 10px;
+}
+
+.employeeContainer {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+}
+table {
+  padding-bottom: 9px;
+}
+th,
+td {
+  width: 110px;
+}
+td {
+  text-align: center;
+}
+img {
+  width: 100px;
+}
+#edit {
+  text-decoration: none;
+  background-color: rgb(0, 0, 0);
+  border: 1px solid black;
+  padding: 2px 5px;
+  color: aliceblue;
+  border-radius: 3px;
+}
+
+#delete {
+  text-decoration: none;
+  background-color: rgb(0, 0, 0);
+  margin-left: 9px;
+  padding: 2px 5px;
+  color: aliceblue;
+  border-radius: 3px;
+  cursor: pointer;
+  border: 1px solid black;
+}
+.formContainerCreate {
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+#M {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin-left: 72px;
+  accent-color: green;
+}
+.M {
+  margin-left: 100px;
+}
+#F {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+
+  margin: 0;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin-left: 70px;
+  accent-color: green;
+}
+.F {
+  margin-left: 100px;
+}
+
+#MCA {
+  width: 16px;
+  height: 16px;
+  margin-left: 40px;
+  background-color: white;
+  accent-color: green;
+  border: 1px solid black;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+#BCA {
+  width: 16px;
+  height: 16px;
+  margin-left: 40px;
+  background-color: white;
+  accent-color: green;
+  border: 1px solid black;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+#BSC {
+  width: 16px;
+  height: 16px;
+  margin-left: 40px;
+  background-color: white;
+  accent-color: green;
+  border: 1px solid black;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+.MCA {
+  appearance: none;
+  margin-left: 95px;
+}
+.BCA {
+  appearance: none;
+  margin-left: 95px;
+}
+.BSC {
+  margin-left: 95px;
+}
+
+#designation {
+  margin-left: 54px;
+  margin-bottom: 15px;
+}
+
+#mobileNo {
+  margin-left: 64px;
+}
+#name {
+  margin-left: 111px;
+}
+#email {
+  margin-left: 111px;
+}
+#image {
+  margin-left: 50px;
+}
+
+#createBtn {
+  padding: 4px 7px;
+  font-size: 1.5em;
+}
