@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Navigation from "./Navigation";
 import apiClient from "../../service/apiClient";
 import { useParams } from "react-router";
@@ -12,6 +12,9 @@ function EditEmployee() {
   const [course, setCourse] = useState("");
   const [image, setImage] = useState(null);
   const { id } = useParams();
+  const [loading, setLoading] = useState(false);
+  const fileInputRef = useRef(null);
+
   async function handleEditSubmit(e) {
     e.preventDefault();
     const formData = new FormData();
@@ -23,10 +26,32 @@ function EditEmployee() {
     formData.append("f_Course", course);
     formData.append("f_Image", image);
     try {
+      setLoading(true);
       const data = await apiClient.edit(formData, id);
-      
+      if (data.success) {
+        alert("Employee Upadted Successfully");
+        setName("");
+        setEmail("");
+        setMobileNo("");
+        setGender("");
+        setCourse("");
+        setDesignation("");
+        fileInputRef.current.value = "";
+
+        setImage(null);
+      }
+      if (!data.success) {
+        alert(
+          data?.message ||
+            data?.error?.errorResponse?.errmsg ||
+            "something is not valid"
+        );
+      }
     } catch (error) {
       console.log(error);
+      alert(error);
+    } finally {
+      setLoading(false);
     }
   }
   return (
@@ -128,11 +153,14 @@ function EditEmployee() {
           <label htmlFor="image">Img Upload</label>
           <input
             type="file"
+            ref={fileInputRef}
             accept="image/*"
             onChange={(e) => setImage(e.target.files[0])}
           />
           <br />
-          <button type="submit">Submit</button>
+          <button id="createBtn" type="submit">
+            Submit
+          </button>
         </form>
       </div>
     </>
