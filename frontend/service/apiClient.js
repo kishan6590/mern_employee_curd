@@ -2,6 +2,7 @@ import { data } from "react-router";
 
 class ApiClient {
   constructor() {
+    // (this.baseURL = 'http:localhost:3000/api/v1/'),
     (this.baseURL = `${import.meta.env.VITE_API_URL}/api/v1/`),
       (this.defaultHeader = {
         "Content-Type": "application/json",
@@ -25,6 +26,7 @@ class ApiClient {
       };
 
       const response = await fetch(url, config);
+      console.log('url',url)
       const data = await response.json();
       console.log(`data->:`, data);
       return data;

@@ -12,14 +12,15 @@ const PORT = process.env.PORT || 3000;
 
 app.use(
   cors({
-    
-    origin: "https://mernemployeemanagement.netlify.app",
+    origin: [ 
+      "https://mern-employee-qljpkhjud-kishans-projects-f7049e60.vercel.app",
+      "http://localhost:5173","http://127.0.0.1:5173"
+    ],
     credentials: true,
     methods: ["GET", "POST", "DELETE", "PUT", "PATCH"],
     allowedHeaders: ["Content-Type", "authorization"],
   })
 );
-                                                                                                                                                                                                                                                
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -28,6 +29,9 @@ app.use(cookieParser());
 // connect to db
 connectDB();
 
+app.get("/", (req, res) => {
+  return res.status(200).json({ message: "Home", success: true });
+});
 app.use("/api/v1/users", userRoutes);
 
 app.use("/api/v1/employee", employeeRoutes);
