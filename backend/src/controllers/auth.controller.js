@@ -11,7 +11,7 @@ const loginUser = async (req, res) => {
         success: false,
       });
     }
-    const token = jwt.sign({ id: t_login._id }, process.env.JWT_SECRET_KEY, {
+    const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET_KEY, {
       expiresIn: "24h",
     });
 
@@ -41,7 +41,7 @@ const logoutUser = async (req, res) => {
   const cookieOption = {
     httpOnly: true,
     expires: new Date(0),
-    sameSite: "strict",
+    sameSite: "none",
     secure: process.env.NODE_ENV !== "development",
   };
 
